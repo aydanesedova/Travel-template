@@ -1,0 +1,464 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  min-height: 100px;
+  width: 100%;
+  border-bottom: 1px solid #a29493;
+  display: flex;
+  align-items: center;
+  position: fixed !important;
+  justify-content: center;
+}
+nav .travel {
+  width: 85%;
+}
+nav .travel a img {
+  width: 150px;
+  height: 24px;
+}
+nav .travel .travelList {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 10px;
+}
+nav .travel .travelList .search {
+  display: flex;
+  min-width: 19%;
+  border-radius: 7px;
+  border: 1px solid #fff;
+  background-color: transparent;
+  align-items: center;
+  justify-content: space-around;
+}
+nav .travel .travelList .search input {
+  width: 80%;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+}
+nav .travel .travelList .search input::placeholder {
+  color: #fff;
+}
+nav .travel .travelList .search button {
+  border: none;
+  background-color: transparent;
+  color: #fff;
+}
+nav .travel .travelList li a {
+  font-family: Quicksand;
+  font-size: 16px;
+  color: #fff !important;
+  font-weight: 900;
+}
+
+#cityBreaks {
+  min-height: 641px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  background-size: cover;
+  background-image: url(/assets/images/amsterdam-1.jpg);
+}
+#cityBreaks .cityBreaksTxt {
+  width: 100%;
+  min-height: 641px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#cityBreaks .cityBreaksTxt span {
+  font-family: Lato;
+  line-height: 10px;
+  font-weight: 500;
+  font-size: 10px;
+}
+#cityBreaks .cityBreaksTxt h2 {
+  font-family: Quicksand;
+  font-size: 52px;
+  color: #fff !important;
+  font-weight: 600;
+  width: 40%;
+  text-align: center;
+}
+#cityBreaks .cityBreaksTxt .tours {
+  width: 100%;
+  min-height: 150px;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+}
+#cityBreaks .cityBreaksTxt .tours button {
+  width: 23%;
+  min-height: 51px;
+  border: 1px solid #fff;
+  color: #fff;
+  transition: 0.5s ease;
+  background-color: transparent;
+  font-family: Lato;
+  font-size: 13px;
+  font-weight: 600;
+}
+#cityBreaks .cityBreaksTxt .tours button:hover {
+  background-color: #ffcc00;
+  border: none;
+}
+
+@media screen and (max-width: 992px) {
+  #cityBreaks .cityBreaksTxt span {
+    font-size: 14px;
+  }
+  #cityBreaks .cityBreaksTxt h2 {
+    font-size: 23px;
+  }
+}
+@media screen and (max-width: 417px) {
+  #cityBreaks .cityBreaksTxt span {
+    font-size: 14px;
+  }
+  #cityBreaks .cityBreaksTxt h2 {
+    font-size: 15px;
+  }
+  #cityBreaks .cityBreaksTxt .tours button {
+    font-size: 8px;
+  }
+}
+#tourOrganize {
+  min-height: 334px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#tourOrganize .tourOrganizeTxt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+#tourOrganize .tourOrganizeTxt i {
+  font-size: 60px;
+  color: #4484ce;
+}
+#tourOrganize .tourOrganizeTxt h3 {
+  font-family: Quicksand;
+  font-size: 26px;
+  color: #222;
+  font-weight: 600;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#tourOrganize .tourOrganizeTxt P {
+  font-family: Quicksand;
+  font-size: 15px;
+  color: #666;
+  width: 85%;
+  text-align: center;
+  font-weight: 600;
+}
+
+#navagio {
+  min-height: 630px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#navagio .navagioTxt {
+  width: 100%;
+  min-height: 630px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#navagio .navagioTxt .greece {
+  width: 95%;
+}
+#navagio .navagioTxt .greece h2 {
+  font-family: Quicksand;
+  font-size: 32px;
+  color: #222;
+  width: 85%;
+  font-weight: 600;
+}
+#navagio .navagioTxt .greece p {
+  font-family: Quicksand;
+  font-size: 15px;
+  color: #666;
+  font-weight: 600;
+}
+#navagio .navagioImg {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 630px;
+}
+#navagio .navagioImg img {
+  width: 100%;
+}
+
+#popular {
+  min-height: 701px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+#popular .popularTxt {
+  min-height: 200px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#popular .popularTxt h2 {
+  font-family: Quicksand;
+  font-size: 32px;
+  color: #222;
+  font-weight: 600;
+}
+#popular .popularTxt p {
+  font-family: Quicksand;
+  font-size: 16px;
+  color: #666;
+  font-weight: 600;
+}
+#popular .imgs {
+  width: 100%;
+}
+#popular .imgs img {
+  width: 100%;
+  border-radius: 7px;
+}
+
+#discover {
+  min-height: 226px;
+  width: 100%;
+  background-image: url(/assets/images/amsterdam-1.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#discover .discoverTxt {
+  min-height: 226px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#discover .discoverTxt h2 {
+  font-family: Quicksand;
+  font-size: 32px;
+  color: #fff;
+  font-weight: 600;
+}
+#discover .discoverTxt p {
+  font-family: Quicksand;
+  font-size: 16px;
+  color: #fff;
+  width: 35%;
+  text-align: center;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 532px) {
+  #discover .discoverTxt h2 {
+    font-size: 15px;
+  }
+  #discover .discoverTxt p {
+    font-size: 10px;
+  }
+}
+#find {
+  min-height: 369px;
+  width: 100%;
+  background-color: #ffcc00;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#find #myForm {
+  width: 80%;
+  min-height: 300px;
+}
+#find #myForm h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 19px;
+  color: #003580;
+}
+#find #myForm input {
+  min-height: 50px;
+  border-radius: 0 !important;
+}
+#find #myForm .add {
+  width: 100%;
+}
+#find #myForm .add #logInBtn {
+  min-width: 10%;
+  min-height: 40px;
+  border-radius: 7px;
+  border: none;
+  background-color: #4484ce;
+  font-family: Quicksand;
+  font-size: 21px;
+  color: #fff;
+}
+
+@media screen and (max-width: 991px) {
+  #find {
+    flex-wrap: wrap;
+  }
+}
+#news {
+  min-height: 800px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#news .newsTxt {
+  min-height: 150px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#news .newsTxt .traveling {
+  width: 80%;
+  min-height: 150px;
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
+}
+#news .newsTxt .traveling h2 {
+  font-family: Quicksand;
+  font-size: 32px;
+  color: #222;
+  font-weight: 600;
+}
+#news .newsTxt .traveling p {
+  font-family: Quicksand;
+  font-size: 15px;
+  color: #666;
+  font-weight: 600;
+}
+#news #producsAll {
+  min-height: 550px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#news #producsAll .miniDiv {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#news #producsAll .miniDiv img {
+  width: 80%;
+}
+#news #producsAll .miniDiv h2 {
+  font-family: Quicksand;
+  font-size: 20px;
+  color: #222;
+  font-weight: 600;
+}
+#news #producsAll .miniDiv .wishAdd {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+}
+#news #producsAll .miniDiv .wishAdd button {
+  border: none;
+  color: #003580;
+  background-color: transparent;
+  font-weight: 600;
+}
+#news #producsAll .miniDiv .wishAdd button i {
+  font-weight: 400;
+}
+#news .loadMore {
+  width: 100%;
+  min-height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#news .loadMore #loadMore {
+  height: 50px;
+  min-width: 15%;
+  border: 2px solid #ffcc00;
+  color: #ffcc00;
+}
+
+@media screen and (max-width: 991px) {
+  #news {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+  }
+  #news #producsAll {
+    flex-wrap: wrap;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #news #producsAll .miniDiv {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #news #producsAll .miniDiv img {
+    width: 60%;
+  }
+  #news #producsAll .miniDiv .wishAdd {
+    width: 70%;
+  }
+  #news #producsAll .miniDiv .wishAdd button {
+    font-size: 6px;
+  }
+}
+@media screen and (max-width: 600px) {
+  #news .loadMore #loadMore {
+    font-size: 6px;
+  }
+}
+footer {
+  min-height: 200px;
+  background-color: #fff;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  width: 100%;
+}
+footer .copyright p {
+  font-size: 15px;
+  font-weight: 500;
+  color: #222;
+}

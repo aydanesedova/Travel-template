@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  min-height: 100px;
+  width: 100%;
+  border-bottom: 1px solid #a29493;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  background-color: #a29493;
+  justify-content: center;
+}
+nav .travel {
+  width: 85%;
+}
+nav .travel a img {
+  width: 150px;
+  height: 24px;
+}
+nav .travel .travelList {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 10px;
+}
+nav .travel .travelList .search {
+  display: flex;
+  min-width: 19%;
+  border-radius: 7px;
+  border: 1px solid #fff;
+  background-color: transparent;
+  align-items: center;
+  justify-content: space-around;
+}
+nav .travel .travelList .search input {
+  width: 80%;
+  background-color: transparent;
+  border: none;
+}
+nav .travel .travelList .search input::placeholder {
+  color: #fff;
+}
+nav .travel .travelList .search button {
+  border: none;
+  background-color: transparent;
+  color: #fff;
+}
+nav .travel .travelList li a {
+  font-family: Quicksand;
+  font-size: 16px;
+  color: #fff !important;
+  font-weight: 900;
+}
+
+#cart {
+  width: 100%;
+  min-height: 900px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#cart #cartProducts {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 80%;
+}
+#cart #cartProducts img {
+  width: 200px;
+  border-radius: 10px;
+}
+#cart #cartProducts button {
+  background-color: #141517;
+  width: 58%;
+  border: none;
+  height: 40px;
+  font-family: poppins;
+  font-size: 12px;
+  line-height: 26px;
+  color: white;
+  transition: 0.6s ease;
+}
+#cart #cartProducts button:hover {
+  background-color: #141517;
+}
+#cart #cartProducts p {
+  font-size: 35px;
+  font-weight: 600;
+  font-family: poppins;
+  color: #333333;
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 933px) {
+  #cart #cartProducts {
+    flex-wrap: wrap;
+  }
+  #cart #cartProducts img {
+    width: 70%;
+  }
+  #cart #cartProducts p {
+    font-family: Courgette;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 36px;
+    color: #222;
+  }
+}
+footer {
+  min-height: 200px;
+  background-color: #a29493;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  width: 100%;
+}
+footer .copyright p {
+  font-size: 15px;
+  font-weight: 500;
+  color: #222;
+}
